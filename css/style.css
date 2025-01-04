@@ -141,3 +141,35 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+/* Navbar styles */
+.navbar {
+    background-color: #003366; /* Deep blue background */
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #00509E; /* Lighter blue for hover effect */
+}
