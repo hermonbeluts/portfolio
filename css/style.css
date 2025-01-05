@@ -14,9 +14,16 @@ body {
 }
 
 /* Banner */
+.banner {
+    position: relative;
+    width: 100%;
+    height: calc(100vh / 4); /* Adjust banner height */
+    overflow: hidden;
+}
+
 .banner img {
     width: 100%;
-    height: calc(100vh / 4); /* Reduce the height to 1/3 */
+    height: 100%;
     object-fit: cover;
 }
 
@@ -31,31 +38,29 @@ body {
 }
 
 .intro-left {
-    flex: 1;
-    text-align: center; /* Centers the text */
-    background: white;
+    position: absolute; /* Overlay on the banner */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center content */
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background */
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px;
+    border-radius: 10px;
 }
 
+/* Intro Right Section */
 .intro-right {
-    flex: 1;
-    text-align: center;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px;
+    text-align: center;
 }
 
 /* Profile Picture */
 .profile-pic {
-    width: 400px;
-    height: 400px;
-    object-fit: cover; /* Ensures the image doesn't stretch */
-    border: 3px solid #003366; /* Add a border in deep blue */
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #003366; /* Deep blue border */
     margin-bottom: 10px;
 }
 
