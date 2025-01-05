@@ -1,24 +1,24 @@
-/* Reset */
-* {
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    line-height: 1.6;
+h1, h2 {
+    text-align: center;
+    color: #003366; /* Deep Blue */
 }
 
 /* Banner */
 .banner {
     position: relative;
     width: 100%;
-    height: calc(100vh / 4); /* Adjust banner height */
+    height: calc(100vh / 3); /* Adjust banner height */
     overflow: hidden;
+    text-align: center;
+    color: white;
 }
 
 .banner img {
@@ -27,47 +27,55 @@ body {
     object-fit: cover;
 }
 
-/* Intro Section */
-.intro-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    gap: 20px; /* Ensures space between intro-left and intro-right */
-    margin: 20px;
-}
-
-.intro-left {
+.banner-text {
     position: absolute; /* Overlay on the banner */
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Center content */
+    transform: translate(-50%, -50%);
     text-align: center;
-    color: white;
     background-color: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background */
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.banner-text h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.banner-text p {
+    margin: 5px 0 0 0;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    justify-content: space-between;
     padding: 20px;
-    border-radius: 10px;
+    gap: 20px;
 }
 
-/* Intro Right Section */
-.intro-right {
-    margin: 20px;
+.profile-section {
+    flex: 1;
     text-align: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
 }
 
-/* Profile Picture */
 .profile-pic {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border: 3px solid #003366; /* Deep blue border */
+    border: 3px solid #003366;
     margin-bottom: 10px;
 }
 
-.bio {
-    font-size: 1.1em;
-    color: #555;
-    line-height: 1.4;
+.featured-projects {
+    flex: 2;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
 }
 
 /* Projects Section */
