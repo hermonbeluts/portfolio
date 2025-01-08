@@ -184,35 +184,36 @@ footer a:hover {
     background-size: cover;
     color: white;
     text-align: center;
-    padding: 50px 20px;
-    margin-bottom: 30px;
+    padding: 60px 20px;
+    margin-bottom: 40px;
 }
 
 .project-content {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 20px;
 }
 
-.project-section {
-    margin-bottom: 30px;
+.project-overview p,
+.project-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
 }
 
-.project-section h2 {
-    color: #003366;
-    margin-bottom: 10px;
+.project-section ul {
+    padding-left: 20px;
+    list-style-type: disc;
 }
 
-.image-grid {
+.project-images .image-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
 }
 
-.image-grid img {
+.project-images .image-grid img {
     max-width: 30%;
-    height: auto;
     border: 2px solid #ddd;
     border-radius: 5px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
