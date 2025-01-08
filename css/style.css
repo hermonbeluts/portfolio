@@ -177,3 +177,43 @@ footer a:hover {
 .navbar a:hover {
     background-color: #00509E; /* Lighter blue for hover effect */
 }
+
+/* Project 7 */
+.project-banner {
+    background: url('../projects/ss/hp_banner.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 30px;
+}
+
+.project-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.project-section {
+    margin-bottom: 30px;
+}
+
+.project-section h2 {
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.image-grid img {
+    max-width: 30%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
