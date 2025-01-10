@@ -19,8 +19,67 @@
             <li><a href="project7-info1300.html">Project 7</a></li>
         </ul>
     </nav>
-    <h1>Project 1</h1>
-    <p>This project demonstrates my skills in blank.</p>
+</header>
+<main class="project-page">
+    <section class="banner">
+        <h1>Causal Inference Sleep Study</h1>
+        <p>Analyzing the impact of sleep on student exam performance using statistical causal inference methods.</p>
+    </section>
+    <section class="content">
+        <h2>Project Overview</h2>
+        <p>
+            This project explored the causal relationship between sleep duration and exam performance. Using a Kaggle dataset 
+            containing features related to student performance, we examined whether sleeping more than six hours per night 
+            (defined as "adequate sleep") impacts exam scores.
+        </p>
+
+        <h2>Process</h2>
+        <p>
+            The project involved several steps:
+        </p>
+        <ul>
+            <li><strong>Research Design:</strong> Drafted the causal question and identified relevant variables using a Directed Acyclic Graph (DAG).</li>
+            <li><strong>Data Cleaning:</strong> Processed the dataset to handle missing values, standardize variables, and dichotomize sleep hours into adequate vs. inadequate.</li>
+            <li><strong>Analysis:</strong> Used Propensity Score Matching to estimate the Average Treatment Effect on the Treated (ATT).</li>
+            <li><strong>Results:</strong> Found that adequate sleep is associated with a negligible decrease in exam scores, suggesting no significant effect.</li>
+        </ul>
+
+        <h2>Key Findings</h2>
+        <ul>
+            <li>The estimated ATT is -0.0374, meaning students with adequate sleep scored 0.0374 standard deviations lower than those with inadequate sleep.</li>
+            <li>The small effect size suggests sleep duration may not significantly impact exam performance.</li>
+            <li>Results emphasize the importance of considering other factors like sleep quality, stress, and socioeconomic status.</li>
+        </ul>
+
+        <h2>Personal Contribution</h2>
+        <p>
+            I independently drafted the causal question, sourced the dataset, conducted the analysis, and wrote the results section, 
+            including the R code used for matching and estimating ATT.
+        </p>
+
+        <h2>Skills Demonstrated</h2>
+        <ul>
+            <li>Statistical causal inference using Propensity Score Matching.</li>
+            <li>Data cleaning and visualization in R.</li>
+            <li>Proficiency in RStudio for statistical analysis.</li>
+        </ul>
+
+        <h2>Key Visualizations</h2>
+        <div class="gallery">
+            <img src="../projects/ss/DAG.png" alt="Causal Diagram (DAG)">
+            <img src="../projects/ss/sleep_bar.png" alt="Sleep Hours Distribution">
+            <img src="../projects/ss/sleep_hist.png" alt="Histogram of Exam Scores by Sleep Group">
+            <img src="../projects/ss/matching1.png" alt="Matched Data Visualization 1">
+            <img src="../projects/ss/matching2.png" alt="Matched Data Visualization 2">
+        </div>
+
+        <h2>View Full Report</h2>
+        <p>
+            The full project report is available for download: 
+            <a href="../projects/fin_report copy.pdf" download="SleepStudy_FinalReport.pdf">Download Report</a>.
+        </p>
+    </section>
+</main>
     <footer>
         <p>Contact me at: <a href="mailto:htb35@cornell.edu">htb35@cornell.edu</a></p>
         <p>&copy; 2025 Hermon Beluts. All rights reserved.</p>
