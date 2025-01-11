@@ -64,6 +64,13 @@ a:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.banner img {
+    width: 100%;
+    height: calc(100vh / 4); /* Reduce the height to 1/4 */
+    object-fit: cover;
+ }
+ 
+
 .banner h1 {
     font-size: 2.5rem;
 }
