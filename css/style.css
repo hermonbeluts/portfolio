@@ -85,6 +85,15 @@ a:hover {
 }
 
 /* Profile Section */
+.main-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 20px; /* Ensures space between intro-left and intro-right */
+    margin: 20px;
+ }
+ 
 .profile-section {
     text-align: center;
     margin-bottom: 40px;
@@ -170,7 +179,6 @@ a:hover {
 .project-page {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
 }
 
 .project-page h2 {
