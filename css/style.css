@@ -70,6 +70,7 @@ a:hover {
     width: 100%;
     height: calc(100vh / 4); /* Reduce the height to 1/4 */
     object-fit: cover;
+    content: url(../projects/ss/hp_banner.png); /* Correct relative path */
 }
 
 .banner h1, .banner p {
