@@ -28,7 +28,9 @@ a:hover {
     color: white;
     padding: 10px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: relative;
+    position: fixed; /* Keep the navbar visible */
+    width: 100%;
+    z-index: 10; /* Ensure navbar stays above other elements */
 }
 
 .navbar ul {
@@ -67,6 +69,7 @@ a:hover {
     top: 50px;
     left: 0;
     width: 100%;
+    z-index: 10; /* Stay above other content */
 }
 
 .navbar .dropdown li {
@@ -93,6 +96,7 @@ a:hover {
     border-radius: 5px;
     overflow: hidden; /* Ensures the banner image and text stay within bounds */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding-top: 60px; /* Prevent overlap with navbar */
 }
 
 .banner img {
@@ -120,7 +124,7 @@ a:hover {
 .banner p {
     font-size: 1.2rem;
     margin: 0;
-    padding-top: 5px; /* Ensures the text doesn't overlap */
+    padding-top: 5px;
 }
 
 /* Main Content (Index Page) */
@@ -228,12 +232,12 @@ a:hover {
 }
 
 .gallery img {
+    max-width: 300px;
     width: 100%;
-    max-width: 300px; /* Sets a maximum size */
-    aspect-ratio: 1 / 1; /* Ensures square dimensions */
+    height: auto;
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    object-fit: cover; /* Ensures images fit within their containers */
+    object-fit: cover;
     transition: transform 0.3s;
 }
 
@@ -257,7 +261,9 @@ a:hover {
 
 .carousel img {
     width: 100%;
+    border-radius: 8px;
     object-fit: cover;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .carousel .carousel-button {
@@ -314,5 +320,10 @@ footer a:hover {
 
     .carousel {
         display: block; /* Show carousel on smaller screens */
+    }
+
+    .carousel img {
+        max-width: 90%;
+        margin: 0 auto;
     }
 }
