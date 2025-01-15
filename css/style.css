@@ -28,7 +28,7 @@ a:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: fixed; /* Keep the navbar visible */
     width: 100%;
-    z-index: 10; /* Ensure navbar stays above other elements */
+    /* z-index: 10; Ensure navbar stays above other elements */
 }
 
 .navbar ul {
@@ -215,7 +215,7 @@ a:hover {
 /* Project Pages */
 .project-page {
     max-width: 1300px;
-    margin: auto;
+    margin: 0 auto;
     padding: 15px;
     background-color: #fff;
 }
