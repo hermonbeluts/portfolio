@@ -28,6 +28,7 @@ a:hover {
     color: white;
     padding: 10px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
 .navbar ul {
@@ -55,11 +56,39 @@ a:hover {
     background-color: #003366; /* Slightly lighter blue */
 }
 
+/* Dropdown Navigation for Smaller Screens */
+.navbar .dropdown {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    gap: 10px;
+    background-color: #00264d;
+    padding: 10px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+}
+
+.navbar .dropdown li {
+    text-align: center;
+}
+
+.navbar .hamburger {
+    display: none; /* Hidden on larger screens */
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.navbar .hamburger.active + .dropdown {
+    display: flex;
+}
+
 /* Banner Section */
 .banner {
     position: relative; /* Enables overlaying content */
     text-align: center;
-    color: transparent;
     margin-bottom: 30px;
     border-radius: 5px;
     overflow: hidden; /* Ensures the banner image and text stay within bounds */
@@ -72,22 +101,26 @@ a:hover {
     object-fit: cover;
 }
 
-.banner h1, .banner p {
+.banner .banner-text {
     position: absolute;
-    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Improves text readability */
+    text-align: center;
+    width: 100%;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .banner h1 {
     font-size: 2.5rem;
+    margin: 0;
 }
 
 .banner p {
     font-size: 1.2rem;
+    margin: 0;
+    padding-top: 5px; /* Ensures the text doesn't overlap */
 }
 
 /* Main Content (Index Page) */
@@ -178,7 +211,6 @@ a:hover {
 
 /* Project Pages */
 .project-page {
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0; /* Removed side padding */
     background-color: #fff;
@@ -194,16 +226,56 @@ a:hover {
 }
 
 .gallery img {
-    width: 400px; /* Uniform size for all images */
-    height: 400px;
+    width: 100%;
+    max-width: 300px; /* Sets a maximum size */
+    aspect-ratio: 1 / 1; /* Ensures square dimensions */
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    object-fit: cover; /* Ensures images fill their boxes without distortion */
+    object-fit: cover; /* Ensures images fit within their containers */
     transition: transform 0.3s;
 }
 
 .gallery img:hover {
     transform: scale(1.05);
+}
+
+/* Carousel for Smaller Screens */
+.carousel {
+    display: none; /* Default hidden */
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.carousel .carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel .prev {
+    left: 10px;
+}
+
+.carousel .next {
+    right: 10px;
 }
 
 /* Footer */
@@ -222,4 +294,23 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none; /* Hide the default nav links */
+    }
+
+    .navbar .hamburger {
+        display: block; /* Show hamburger icon */
+    }
+
+    .gallery {
+        display: none; /* Hide gallery on smaller screens */
+    }
+
+    .carousel {
+        display: block; /* Show carousel on smaller screens */
+    }
 }

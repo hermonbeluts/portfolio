@@ -8,15 +8,16 @@
 </head>
 <body>
     <nav class="navbar">
-        <ul>
+        <span class="hamburger" onclick="toggleMenu()">☰</span>
+        <ul class="dropdown">
             <li><a href="../index.html">Home</a></li>
-            <li><a href="project1-info3900.html">Project 1</a></li>
-            <li><a href="project2-3189personal.html">Project 2</a></li>
-            <li><a href="project3-3189group.html">Project 3</a></li>
-            <li><a href="project4-info4100.html">Project 4</a></li>
-            <li><a href="project5-info2950.html">Project 5</a></li>
-            <li><a href="project6-hciproto.html">Project 6</a></li>
-            <li><a href="project7-info1300.html">Project 7</a></li>
+            <li><a href="projects/project1-info3900.html">Project 1</a></li>
+            <li><a href="projects/project2-3189personal.html">Project 2</a></li>
+            <li><a href="projects/project3-3189group.html">Project 3</a></li>
+            <li><a href="projects/project4-info4100.html">Project 4</a></li>
+            <li><a href="projects/project5-info2950.html">Project 5</a></li>
+            <li><a href="projects/project6-hciproto.html">Project 6</a></li>
+            <li><a href="projects/project7-info1300.html">Project 7</a></li>
         </ul>
     </nav>
     <div class="banner">
@@ -86,6 +87,7 @@
         </ul>
 
         <h2>Key Visualizations</h2>
+ 
         <div class="gallery">
             <img src="../projects/ss/student_sketch.png" alt="Student Dashboard Sketch">
             <img src="../projects/ss/teacher_sketch.png" alt="Teacher Dashboard Sketch">
@@ -94,6 +96,20 @@
             <img src="../projects/ss/student_dash1.png" alt="Student Dashboard Visualization 1">
             <img src="../projects/ss/student_dash2.png" alt="Student Dashboard Visualization 2">
         </div>
+        
+        <div class="carousel">
+            <button class="carousel-button prev" onclick="prevSlide()">❮</button>
+            <div class="carousel-images">
+                <img src="../projects/ss/student_sketch.png" alt="Student Dashboard Sketch">
+                <img src="../projects/ss/teacher_sketch.png" alt="Teacher Dashboard Sketch">
+                <img src="../projects/ss/instructor_dash1.png" alt="Instructor Dashboard Visualization 1">
+                <img src="../projects/ss/instructor_dash2.png" alt="Instructor Dashboard Visualization 2">
+                <img src="../projects/ss/student_dash1.png" alt="Student Dashboard Visualization 1">
+                <img src="../projects/ss/student_dash2.png" alt="Student Dashboard Visualization 2">
+            </div>
+            <button class="carousel-button next" onclick="nextSlide()">❯</button>
+        </div>
+
 
         <h2>View Project</h2>
         <p>
@@ -106,5 +122,6 @@
         <p>Contact me at: <a href="mailto:htb35@cornell.edu">htb35@cornell.edu</a></p>
         <p>&copy; 2025 Hermon Beluts. All rights reserved.</p>
     </footer>
+    <script src="../js/scripts.js"></script>
 </body>
 </html>
