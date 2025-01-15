@@ -215,7 +215,7 @@ a:hover {
 /* Project Pages */
 .project-page {
     max-width: 1300px;
-    margin: 15px;
+    margin: auto;
     padding: 15px;
     background-color: #fff;
 }
