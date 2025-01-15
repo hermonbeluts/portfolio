@@ -303,7 +303,7 @@ footer {
 }
 
 footer a {
-    color: #FFA500;
+    color: #28a745;
 }
 
 footer a:hover {
@@ -319,6 +319,10 @@ footer a:hover {
     .navbar .hamburger {
         display: block; /* Show hamburger icon */
     }
+}
+
+
+@media (max-width: 1500px) {
 
     .gallery {
         display: none; /* Hide gallery on smaller screens */
