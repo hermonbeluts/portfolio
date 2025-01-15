@@ -135,7 +135,7 @@ a:hover {
 .profile-section, .featured-projects {
     flex: 1; /* Ensures equal width for both sections */
     padding: 20px;
-    background-color: white; /* White background for profile-section */
+    background-color: rgb(233, 233, 233); /* White background for profile-section */
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -154,6 +154,7 @@ a:hover {
     width: 300px; /* Square-shaped profile picture */
     height: 300px;
     border-radius: 5px; /* Removes circular shape */
+    border: 3px solid #003366;
     object-fit: cover;
     margin-bottom: 15px;
 }
@@ -211,7 +212,7 @@ a:hover {
 
 /* Project Pages */
 .project-page {
-    max-width: 1300px;
+    max-width: 1250px;
     margin: 0 auto;
     padding: 0; /* Removed side padding */
     background-color: #fff;
