@@ -42,9 +42,9 @@
     <section class="content">
         <h2>Project Overview</h2>
         <p>
-            This project explored the causal relationship between sleep duration and exam performance. Using a Kaggle dataset 
-            containing features related to student performance, we examined whether sleeping more than six hours per night 
-            (defined as "adequate sleep") impacts exam scores.
+            The goal of this project was to choose a topic and conduct a causal inference analysis determining whether one variable causes the outcome. We specifically explored the causal relationship between sleep duration and exam performance. Using a Kaggle dataset 
+            containing various features related to student performance, we examined whether sleeping more than six hours per night 
+            (which we defined as the benchmark for "adequate sleep") impacts exam scores.
         </p>
 
         <h2>Process</h2>
@@ -52,7 +52,7 @@
             The project involved several steps:
         </p>
         <ul>
-            <li><strong>Research Design:</strong> Drafted the causal question and identified relevant variables using a Directed Acyclic Graph (DAG).</li>
+            <li><strong>Research Design:</strong> Sourcing relevant dataset, drafting the causal research question and potential outcomes notation, and identifying relevant variables using a Directed Acyclic Graph (DAG) to determine the sufficient adjustment set.</li>
             <li><strong>Data Cleaning:</strong> Processed the dataset to handle missing values, standardize variables, and dichotomize sleep hours into adequate vs. inadequate.</li>
             <li><strong>Analysis:</strong> Used Propensity Score Matching to estimate the Average Treatment Effect on the Treated (ATT).</li>
             <li><strong>Results:</strong> Found that adequate sleep is associated with a negligible decrease in exam scores, suggesting no significant effect.</li>
