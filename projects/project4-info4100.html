@@ -41,11 +41,10 @@
 <main class="project-page">
     <section class="content">
         <h2>Project Overview</h2>
-        <p>
-            This project focused on developing interactive dashboards for a Cornell CS course to visualize clicker and quiz data. 
-            Using RShiny, we created two dashboards: an instructor dashboard to monitor class-wide performance and engagement, and a 
-            student dashboard to provide personalized insights into individual performance.
-        </p>
+        <p>The goal of this project was to develop a learning analytics dashboard based on clicker data from previous students of a CS course at Cornell University. 
+            We were tasked with using RShiny to develop dashboards given aggregated clicker records and quiz data.
+            Using RShiny, we created two dashboards: an instructor dashboard, which offers an overview of the class characteristics, engagement, and performance, and a 
+            student dashboard, which offers a specific student an overview of their engagement and performance (and how it compares to others).</p>
 
         <h2>Datasets</h2>
         <p>
@@ -53,12 +52,16 @@
         </p>
         <ul>
             <li>
-                <strong>Experience Dataset:</strong> Contains aggregated data from surveys and faculty records, such as 
-                <em>programming experience</em>, <em>SQL knowledge</em>, and <em>data visualization skills</em>.
+                <strong>Experience Dataset:</strong> The experience dataset contains one record per student who completed the CS course between 2016-2018. 
+                There are two sources to this dataset: Faculty Center and a Skills Survey (administered via the Blackboard LMS) where students self-reported their skill level for various skills the first week of class. 
+                This data has been de-identified. Name, NETID, emplid, and major have all been removed and replaced with a unique numeric identifier. Note that not all students completed the skills survey, they will have null values for the survey result fields. 
+                The data contains several attributes such as <em>prog</em> (whether a student was GRAD or UGRAD), <em>database_score</em>, <em>sql_score</em>, <em>programming_score</em> (self-reported experience levels), and more.
             </li>
             <li>
-                <strong>Quiz Dataset:</strong> Includes iClicker and quiz data, with attributes such as <em>attendance</em>, 
-                <em>correct answers</em>, and <em>quiz scores</em>.
+                <strong>Quiz Dataset:</strong> The quiz dataset contains one record per student per class session held where iClickers were used. 
+                Sources used in the creation of this data set include: iClicker session xml files, Blackboard gradebook (for quiz scores), and the Blackboard class schedule (used to map iClicker session to related quiz scores). 
+                Note that in some cases there are multiple iClicker sessions / lectures associated with a single quiz. This dataset may be joined to the experience dataset by the <em>student_key</em> field. 
+                The data contains several attributes such as <em>attended</em> (measuring student attendance), <em>correct_q_clicker</em> (the number of correct clicker questions answered by a student), and more.
             </li>
         </ul>
 
@@ -67,8 +70,9 @@
             Our work involved the following steps:
         </p>
         <ul>
-            <li><strong>Planning:</strong> Sketched wireframes for both dashboards, identifying user needs and visualization goals.</li>
-            <li><strong>Wireframe Implementation:</strong> Built layouts for the dashboards using RShiny.</li>
+            <li><strong>Planning:</strong> Determined the target audience and their needs, what the goals of our dashboards were, and how the visualizations would support our goal (for both the student and teacher dashboards). 
+                We proceeded to sketch each dashboard, each containing at least 4 data visualizations.</li>
+            <li><strong>Wireframe Implementation:</strong> Generated the dashboard layout given a very basic wireframe</li>
             <li><strong>Data Pre-processing:</strong> Cleaned and merged datasets to prepare them for visualization.</li>
             <li><strong>Visualization:</strong> Created data visualizations for both dashboards to display key metrics.</li>
         </ul>
@@ -76,12 +80,10 @@
         <h2>Dashboards</h2>
         <ul>
             <li>
-                <strong>Instructor Dashboard:</strong> Displays metrics such as total students, average attendance, 
-                distribution of skills, and quiz performance.
+                <strong>Instructor Dashboard:</strong> Displays metrics such as: the total number of students, the average attendance, the distribution of students by program, the distribution of experience levels in different categories, the average quiz score per quiz separated by program, the average temperature of students per session, and average attendance per session.
             </li>
             <li>
-                <strong>Student Dashboard:</strong> Displays individual quiz scores, attendance, session temperatures, 
-                and comparative cohort performance.
+                <strong>Student Dashboard:</strong> Displays metrics such as: their quiz average, the number of classes missed, their clicker progress bar, their temperature every session, and two interpretive visualizations for quiz scores.
             </li>
         </ul>
 
@@ -111,8 +113,8 @@
 
         <h2>Personal Contribution</h2>
         <p>
-            My primary responsibilities included planning and sketching the dashboards and creating data visualizations 
-            for the instructor dashboard, particularly the visualization of quiz performance by program.
+            The team split up the tasks of creating the basic UI while others worked on pre-processing the data and creating the statistics and visualizations that would populate the UI. 
+            I was directly involved in the planning/sketching process, as well as generating the data visualizations for the instructor dashboard (particularly the average quiz score per quiz separated by program).
         </p>
 
         <h2>Skills Demonstrated</h2>

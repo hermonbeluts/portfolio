@@ -43,13 +43,16 @@
             <p>
                 This project aimed to analyze the evolution of trends on TikTok, identify patterns in trending songs, 
                 and understand how songs gain or lose popularity. Using a Kaggle dataset collected via the Spotify API, 
-                we examined various features like artist popularity, danceability, and loudness.
+                we examined various features like artist popularity, danceability, and loudness to determine their significance or effect on a song's popularity or "trendiness".
             </p>
             
-            <h2>Process</h2>
+            <h2>Process and Findings</h2>
             <p>
-                Our team cleaned and merged datasets from 2019-2022, analyzed features such as track popularity, danceability, 
-                energy, valence, and artist popularity, and conducted an OLS regression to identify correlations. 
+                We analyzed a Kaggle dataset of popular songs on TikTok from 2019-2022, collected using the Spotify API and containing several features related to song popularity. 
+                We ultimately cleaned the dataset to observe columns/features track name and popularity, artist name and popularity, track popularity, year, danceability, energy, valence, loudness, and duration. 
+                Additionally, we merged the separate datasets for each year into one consolidated dataset and proceeded to further clean the data for our analysis. 
+                We then preregistered our hypothesis and conducted our analysis of which factors influenced a song’s trendiness using various data science libraries in Python such as NumPy and Pandas, as well as SQL. 
+                We generated several visualizations to look for trends between the features and popularity. We ran ordinary least squares (OLS) regression analysis on these features to determine if there was any correlation. 
                 Key findings included:
             </p>
             <ul>
@@ -94,7 +97,7 @@
 
             <h2>View Project</h2>
             <p>
-                Full IPYNB and VSCode files available upon request.
+                The full IPYNB and VSCode files are hosted locally and can be made available upon request.
             </p>
         </section>
     </main>
