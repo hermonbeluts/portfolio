@@ -110,8 +110,8 @@ a:hover {
     transform: translate(-50%, -50%);
     text-align: center;
     width: 100%;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    color: #003366;
+    text-shadow: 2px 2px 4px white;
 }
 
 
@@ -153,7 +153,7 @@ a:hover {
  .profile-section h2 {
     font-size: 2rem;
     margin-bottom: 10px;
-    color: #003366;
+    color: black;
  }
  
  
@@ -171,6 +171,7 @@ a:hover {
     font-size: 1.2rem; /* Slightly larger font size */
     color: #555;
     text-align: left;
+    background-color: white;
  }
  
  
@@ -178,7 +179,7 @@ a:hover {
     font-size: 2rem;
     margin-bottom: 20px;
     text-align: center;
-    color: #003366;
+    color: black;
  }
  
  
@@ -191,7 +192,6 @@ a:hover {
     padding: 15px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
-    aspect-ratio: 1 / 1; /* Ensures a perfect square */
  }
  
  
