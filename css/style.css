@@ -132,7 +132,7 @@ a:hover {
     justify-content: space-between;
     gap: 20px; /* Ensures space between sections */
     margin: 20px auto;
-    max-width: 1200px;
+    max-width: auto;
  }
  
  
@@ -170,12 +170,14 @@ a:hover {
  .profile-section p {
     font-size: 1.2rem; /* Slightly larger font size */
     color: #555;
+    text-align: left;
  }
  
  
  .featured-projects h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+    text-align: center;
     color: #003366;
  }
  
@@ -189,6 +191,7 @@ a:hover {
     padding: 15px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
+    aspect-ratio: 1 / 1; /* Ensures a perfect square */
  }
  
  
