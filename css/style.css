@@ -111,7 +111,7 @@ a:hover {
     text-align: center;
     width: 100%;
     color: white;
-    text-shadow: 2px 2px 4px #003366;
+    text-shadow: 2px 2px 4px black;
 }
 
 
@@ -169,7 +169,7 @@ a:hover {
  
  .profile-section p {
     font-size: 1.2rem; /* Slightly larger font size */
-    color: #555;
+    color: black;
     text-align: left;
  }
  
