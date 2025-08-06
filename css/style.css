@@ -367,9 +367,10 @@ footer .linkedin {
     gap: 5px;
 }
 
-footer .linkedin img {
-    width: 24px;
-    height: 24px;
+footer .linkedin-logo {
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
 }
 
 /* Responsive Design */
