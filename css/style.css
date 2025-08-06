@@ -180,7 +180,6 @@ a:hover {
     margin-bottom: 20px;
     text-align: center;
     color: black;
-    background-color: #003366;
  }
  
  
@@ -229,6 +228,14 @@ a:hover {
  .featured-projects .project-card a:hover {
     background-color:#00254b; /* Darker green on hover */
  }
+
+ .project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
  
 
 /* Project Pages */
