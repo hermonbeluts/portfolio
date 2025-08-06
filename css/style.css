@@ -92,7 +92,7 @@ a:hover {
     border-radius: 5px;
     overflow: hidden; /* Ensures the banner image and text stay within bounds */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding-top: 60px; /* Prevent overlap with navbar */
+    padding-top: 10px; /* Prevent overlap with navbar */
 }
 
 .banner img {
