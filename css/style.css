@@ -139,7 +139,7 @@ a:hover {
  .profile-section, .featured-projects {
     flex: 1; /* Ensures equal width for both sections */
     padding: 20px;
-    background-color: rgb(148, 147, 147); /* White background for profile-section */
+    background-color: rgb(195, 193, 193); /* White background for profile-section */
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
  }
