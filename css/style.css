@@ -67,10 +67,13 @@ a:hover {
             padding: 10px;
             position: absolute;
             top: 100%; /* Position below navbar */
-            left: 0;
+            left: 7px;
             width: 100%;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+
+        .navbar .dropdown li { 
+            text-align: center; }
 
         .navbar .dropdown.active {
             display: flex;
