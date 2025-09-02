@@ -21,6 +21,7 @@ a:hover {
 
 /* Navigation Bar */
 .navbar {
+    position: fixed;
     background-color: #00264d; /* Darker shade of blue */
     color: white;
     padding: 15px 0;
@@ -65,7 +66,7 @@ a:hover {
     top: 50px;
     left: 0;
     width: 100%;
-    /* z-index: 10;  Stay above other content */
+    z-index: 10;
 }
 
 .navbar .dropdown li {
@@ -381,11 +382,12 @@ footer .linkedin-logo {
     .navbar .hamburger {
         display: block; /* Show hamburger icon */
     }
+    .main-content {
+    flex-direction: column; /* Stack vertically */
 }
 
 
 @media (max-width: 1500px) {
-
     .gallery {
         display: none; /* Hide gallery on smaller screens */
     }
