@@ -62,7 +62,7 @@ a:hover {
     gap: 10px;
     background-color: #00264d;
     padding: 10px;
-    position: absolute;
+    position: fixed;
     top: 50px;
     left: 0;
     width: 100%;
@@ -88,6 +88,7 @@ a:hover {
 /* Banner Section */
 .banner {
     position: relative; /* Enables overlaying content */
+    z-index: 1; /* keep banner lower */
     text-align: center;
     margin-bottom: 30px;
     border-radius: 5px;
@@ -384,6 +385,18 @@ footer .linkedin-logo {
     }
     .main-content {
     flex-direction: column; /* Stack vertically */
+    }
+    .featured-projects .project-card {
+    position: relative;
+    height: 250px;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    margin: 12px;
+}
 }
 
 
