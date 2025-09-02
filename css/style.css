@@ -154,11 +154,12 @@ a:hover {
             color: black; } 
             
         .profile-section img { 
-            width: 300px; /* Square-shaped profile picture */ 
-            height: 300px; 
+            width: 450px; /* Square-shaped profile picture */ 
+            height: 4500px; 
             border-radius: 5px; /* Removes circular shape */ 
             border: 3px solid black; 
             object-fit: cover; 
+            margin-top: 15px;
             margin-bottom: 15px; } 
             
         .profile-section p { 
@@ -378,11 +379,15 @@ a:hover {
             }
             
             .profile-section, .featured-projects {
-                width: 100%;
+                max-width: auto;
             }
         }
 
         @media (max-width: 768px) {
+            .profile-section, .featured-projects {
+                max-width: auto;
+            }
+
             .navbar ul {
                 display: none;
             }
@@ -410,6 +415,10 @@ a:hover {
         }
 
         @media (max-width: 576px) {
+            .profile-section, .featured-projects {
+                max-width: auto;
+            }
+
             .banner {
                 margin-top: 60px;
             }
@@ -437,6 +446,10 @@ a:hover {
         }
 
         @media (max-width: 1200px) {
+            .profile-section, .featured-projects {
+                max-width: auto;
+            }
+            
             .gallery {
                 display: none;
             }
