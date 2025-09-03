@@ -176,7 +176,7 @@ a:hover {
 
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 30px;
         }
 
@@ -197,7 +197,7 @@ a:hover {
         }
 
         .project-card-image {
-            height: 200px;
+            height: 180px;
             overflow: hidden;
         }
 
@@ -236,6 +236,44 @@ a:hover {
 
         .project-card a:hover {
             background-color: #218838;
+        }
+
+        .project-technologies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .project-technologies span {
+            background: rgba(77, 166, 255, 0.2);
+            color: #4da6ff;
+            padding: 4px 10px;
+            border-radius: 16px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .project-card-actions {
+            display: flex;
+            gap: 12px;
+        }
+
+        .project-card-actions a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 16px;
+            border-radius: 5px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            flex: 1;
+        }
+
+        .project-card-actions a i {
+            margin-right: 6px;
         }
 
         /* Project Pages - FIXED */
