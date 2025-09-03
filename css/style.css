@@ -203,6 +203,7 @@ a:hover {
 
 .project-card .overlay-content {
     position: absolute;
+    box-sizing: border-box;
     z-index: 2;
     top: 0;
     left: 0;
@@ -214,7 +215,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     color: white;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     transition: background 0.3s;
     margin: 0 auto;
@@ -231,7 +232,9 @@ a:hover {
     color: #f0f0f0;
     margin: 0;
     padding: 5px;
-    max-width: 90%;
+    max-width: 100%;   /* instead of 90% */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .project-card a {
